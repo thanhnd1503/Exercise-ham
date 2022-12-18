@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm 02</title>
+</head>
+<body>
+
+  <script>
+    //Bài 1 hàm tính bình phương của một số bất kì
+    // function squareNumber(num) {
+    //   let reusult = num*num;
+    //   return reusult;
+    // }
+    // let a = +prompt("Enter numbers");
+    // document.write("The square of the number you just entered is" + " " +squareNumber(a));
+    //Bài 2 Tính diện tích và chu vi hình tròn
+    // const pi = 3.14159265359;
+    // function areaOfACircle(r) {
+    //   let s = r * r * pi;
+    //   return s;
+    // }
+    // function diameterOfACircle(r) {
+    //   let c = r * 2 * pi;
+    //   return c;
+    // }
+    // let r = +prompt("Nhập bán kính");
+    //
+    //   let choose = +prompt("Nhập 1 để tính diện tích nhập 2 để tính chu vi");
+    //C1: Sử dụng đệ quy để tạo cho người dùng nhập lại nếu nhập sai
+    // function chooseValue() {
+    //
+    //   switch (choose) {
+    //     case 1:
+    //       document.write("Diện tích của hình tròn là" + " " + areaOfACircle(r));
+    //       break;
+    //     case 2:
+    //       document.write("Chu vi của hình tròn là" + " " + diameterOfACircle(r));
+    //       break;
+    //     default:
+    //       choose = +prompt("Bạn đã nập sai, vui lòng nhập 1 hoặc 2 để tiếp tục:")
+    //       chooseValue();
+    //
+    //   }
+    // }
+    // chooseValue();
+    //C2: Sử dụng vòng lặp while để người dùng nhập lại khi nhập sai
+// while(choose != 0){
+//   switch (choose) {
+//               case 1:
+//                 document.write("Diện tích của hình tròn là" + " " + areaOfACircle(r));
+//                 choose = 0;
+//                 break;
+//               case 2:
+//                 document.write("Chu vi của hình tròn là" + " " + diameterOfACircle(r));
+//                 choose = 0;
+//                 break;
+//               default:
+//                 choose = +prompt("Bạn đã nập sai, vui lòng nhập 1 hoặc 2 để tiếp tục:");
+//                 break;
+//             }
+// }
+    //Bài 3 tính giai thừa của một số nhập vào từ bàn phím
+    // function factorialOfANumber(num) {
+    //   let s=1;
+    //   for (let i = 1; i <= num ; i++) {
+    //     s *= i;
+    //   }
+    //   return s;
+    // }
+    // let a = +prompt("Nhập số bạn muốn tính giai thừa:")
+    // document.write("Gia thừa của !" + a + "=" + factorialOfANumber(a));
+    //Bài 4 check kí tự có phải số hay không
+    // function checkCharacters(character) {
+    //   if (isNaN(character)){
+    //     return false;
+    //   }else return true;
+    // }
+    // let a = prompt("nhập kí tự bạn muốn check");
+    // document.write(checkCharacters(a));
+    //Bài 5 trả về giá trị nhỏ nhất trong 3 số
+    // function compareNumber(arr) {
+    //   let min = arr[0];
+    //   for (let i = 0; i < arr.length ; i++) {
+    //     if(arr[i] < min){
+    //       min = arr[i];
+    //     }
+    //   }return min;
+    // }
+    // let num = +prompt("Nhập số lượng phần tử của mảng");
+    // let a = [];
+    // for (let i = 0; i <= num ; i++) {
+    //   let number = +prompt("Nhập " + num + " phần tử vào mảng")
+    //   a.push(number);
+    // }
+    // document.write("Phần tử nhỏ nhất trong mảng có "+ num + " phần tử là "+compareNumber(a));
+    //Bài 6 Check số nguyên dương
+    // function checkInteger(num) {
+    //         if (num > 0){
+    //             return true;
+    //         }else return false;
+    // }
+    // let a = +prompt("Nhập số bạn cần check");
+    // document.write(checkInteger(a));
+    //Bài 7 đổi chỗ hai số nguyên bất kì
+    // function swapAnyInterger() {
+    //     let num1 = +prompt("enter num1");
+    //     let num2 = +prompt("enter num2");
+    //     document.write("Trước khi đổi: num1 = " + num1 + ", num2 = " + num2 + "<br>");
+    //     let temp = num1;
+    //     num1 = num2;
+    //     num2 = temp;
+    //    document.write("Sau khi đổi: num1 = " + num1 + ", num2 = " + num2);
+    // }
+    // swapAnyInterger();
+    //Bài 8 Đảo ngược mảng số nguyên
+    // let number = +prompt("Nhập số lượng phần tử của mảng: ")
+    // function enterArray(number) {
+    //     let  arr = [];
+    //     for (let i = 0; i < number ; i++) {
+    //         // let num = +prompt(`Nhap phan tu thu ${i+1}: `);
+    //         let num = +prompt("Nhap phan tu thu " + (i+1) +":");
+    //         arr.push(num);
+    //     }
+    //     return arr;
+    // }
+    // function reverseArr() {
+    //     let a = [];
+    //     a = enterArray(number);
+    //     let i = 0;
+    //     let j = a.length-1;
+    //     while (i < j){
+    //         let temp = a[i];
+    //         a[i] = a[j];
+    //         a[j] = temp;
+    //         i++;
+    //         j--;
+    //     }
+    //     return a;
+    // }
+    //
+    // document.write("Mảng sau khi đảo: " + "["+reverseArr()+"]");
+    //Bài 9 kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+    let number = +prompt("Nhập số lượng phần tử của mảng: ");
+    function enterArray(number) {
+        let  arr = [];
+        for (let i = 0; i < number ; i++) {
+            // let num = prompt(`Nhap phan tu thu ${i+1}: `);
+            let num = prompt("Nhap phan tu thu " + (i+1) +":");
+            arr.push(num);
+        }
+        return arr;
+    }
+    let  arr = enterArray(number);
+    let count = 0;
+    function checkCharacter(character) {
+        for (let i = 0; i < number; i++) {
+            if(character === arr[i]){
+                count ++;
+            }
+        }
+        if (count > 0){
+            return count;
+        }else return -1;
+    }
+    let again = 0;
+    do{
+        let a = prompt("Nhập kí tự bạn muốn kiểm tra: ");
+        let result = checkCharacter(a);
+
+        if (result != -1)
+        {
+            document.write(`So ki tu ${a} co trong mang la ${count}`);
+            again = 1;
+            break;
+        }else {
+            alert("Kí tự này không có trong mảng. Vui lòng nhập kí tự khác");
+            again = 0;
+        }
+    }while (again == 0);
+
+
+
+
+  </script>
+</body>
+</html>
